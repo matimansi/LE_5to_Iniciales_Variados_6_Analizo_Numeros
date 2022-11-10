@@ -1,11 +1,4 @@
 
-/*
-	Con dos valores ingresados por parámetros, analizo cuál es el mayor.
-	En caso de que ambos sean par devuelvo un 0, en caso contrario devuelvo un -1. 
-
-	>>> TERMINADO <<<
-*/
-
 #include <stdio.h>
 
 int analizo_numeros (int num1, int num2);
@@ -13,16 +6,15 @@ int analizo_numeros (int num1, int num2);
 int main()
 {
 	int num1, num2, resultado;
-	printf("Bienvenido a mi programa...\n");
-	printf("Ingresados 2 numeros enteros, indicare el mayor,\n");
-	printf("Si ambos numero son par imprimire un 0,\n");
-	printf("si no, imprimire un -1\n");
+	printf("\nBienvenido a mi programa...\n");
+	printf("Ingresados 2 numeros enteros, indicare el mayor.\n");
+	printf("Si ambos numero son par imprimire un 0, si no, imprimire un -1\n");
 	printf("Ingrese el primer numero\n>>> ");
 	scanf("%d", &num1);
 	printf("Ingrese el segundo numero\n>>> ");
 	scanf("%d", &num2);
 	resultado = analizo_numeros(num1, num2);
-	printf("%d", resultado);
+	printf("%d\n\n", resultado);
 	return 0;
 }
 
